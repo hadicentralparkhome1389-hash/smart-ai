@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemine 1.2 - Full Screen</title>
+    <style>
+        /* Screen ko pura cover karne ke liye styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; /* Dark Theme */
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* Full Viewport Height */
+            width: 100%;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid #333;
+        }
+
+        .chat-display {
+            flex: 1; /* Bacha hua saara space ye area lega */
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input-area {
+            padding: 20px;
+            background-color: #1f1f1f;
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            background-color: #2d2d2d;
+            color: white;
+            outline: none;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            Gemine 1.2
+        </header>
+
+        <div class="chat-display" id="chat">
+            <p style="color: #888; text-align: center;">Welcome to Gemine 1.2 - Screen is now optimized.</p>
+        </div>
+
+        <div class="input-area">
+            <input type="text" placeholder="Type your message here...">
+            <button>Send</button>
+        </div>
+    </div>
+
+</body>
+</html>
